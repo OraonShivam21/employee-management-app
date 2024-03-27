@@ -20,7 +20,7 @@ loginBtn.addEventListener("click", (e) => {
     .then((data) => {
       alert(data.message);
       localStorage.setItem("token", JSON.stringify(data.access_token));
-      window.location.href = "/client/dashboard.html";
+      window.location.href = "/dashboard.html";
     })
     .catch((error) => alert(error.error));
 });

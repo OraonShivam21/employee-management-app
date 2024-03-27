@@ -1,7 +1,7 @@
 const server_uri = "https://employee-management-app-tqta.onrender.com";
 const token = JSON.parse(localStorage.getItem("token"));
 
-if (!token) window.location.href = "/client/index.html";
+if (!token) window.location.href = "/index.html";
 
 const editFirstName = document.getElementById("editFirstName");
 const editLastName = document.getElementById("editLastName");
@@ -39,7 +39,7 @@ document.getElementById("addEmployeeBtn").addEventListener("click", (e) => {
   })
     .then((res) => res.json)
     .then((data) => {
-      window.location.href = "/client/dashboard.html";
+      window.location.href = "/dashboard.html";
     });
 });
 
@@ -204,5 +204,5 @@ function renderPaginationButton() {
 
 document.getElementById("logout").addEventListener("click", (e) => {
   localStorage.clear();
-  window.location.href = "/client/index.html";
+  window.location.href = "/index.html";
 });
