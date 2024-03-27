@@ -45,7 +45,7 @@ signupBtn.addEventListener("click", (e) => {
       .then((data) => {
         console.log(data.message);
         alert("You've been successfully registered! Now please login.");
-        window.location.href = "/client/index.html";
+        window.location.href = "/index.html";
       })
       .catch((error) => alert(error.error));
   } else {
