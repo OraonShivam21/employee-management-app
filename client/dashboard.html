@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Management App</title>
+    <link rel="stylesheet" href="./styles/dashboard.css" />
+  </head>
+  <body>
+    <h1>Employee Management Software</h1>
+    <button id="addEmployee">Add Employee</button>
+    <button id="logout">logout</button>
+
+    <table>
+      <thead>
+        <tr>
+          <th>No.</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Email</th>
+          <th>Salary</th>
+          <th>Department</th>
+          <th>Date</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="employeeBody">
+        <!-- render employee data here -->
+      </tbody>
+    </table>
+
+    <div id="pagination">
+      <!-- render pagination buttons here -->
+    </div>
+
+    <div id="addFields">
+      <h1>Add New Employee</h1>
+      <input
+        type="text"
+        name="addFirstName"
+        id="addFirstName"
+        placeholder="First Name"
+      />
+      <input
+        type="text"
+        name="addLastName"
+        id="addLastName"
+        placeholder="Last Name"
+      />
+      <input type="email" name="addEmail" id="addEmail" placeholder="Email" />
+      <input
+        type="number"
+        name="addSalary"
+        id="addSalary"
+        placeholder="Salary"
+      />
+      <select name="addDepartment" id="addDepartment">
+        <option value="Tech">Tech</option>
+        <option value="Marketing">Marketing</option>
+        <option value="Operations">Operations</option>
+      </select>
+      <input
+        type="text"
+        name="addJoinDate"
+        id="addJoinDate"
+        placeholder="Date of Join"
+      />
+      <button id="addEmployeeBtn">Add Employee</button>
+    </div>
+
+    <div id="editFields">
+      <h1>Edit Employee Details</h1>
+      <input
+        type="text"
+        name="editFirstName"
+        id="editFirstName"
+        placeholder="First Name"
+      />
+      <input
+        type="text"
+        name="editLastName"
+        id="editLastName"
+        placeholder="Last Name"
+      />
+      <input type="email" name="editEmail" id="editEmail" placeholder="Email" />
+      <input
+        type="number"
+        name="editSalary"
+        id="editSalary"
+        placeholder="Salary"
+      />
+      <select name="editDepartment" id="editDepartment">
+        <option value="Tech">Tech</option>
+        <option value="Marketing">Marketing</option>
+        <option value="Operations">Operations</option>
+      </select>
+      <input
+        type="text"
+        name="editJoinDate"
+        id="editJoinDate"
+        placeholder="Date of Join"
+      />
+      <button id="editEmployeeBtn">Update Employee</button>
+    </div>
+
+    <script src="./scripts/dashboard.js"></script>
+  </body>
+</html>
