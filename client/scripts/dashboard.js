@@ -1,4 +1,4 @@
-const server_uri = "http://localhost:3000";
+const server_uri = "https://employee-management-app.onrender.com";
 const token = JSON.parse(localStorage.getItem("token"));
 
 if (!token) window.location.href = "/client/index.html";

@@ -1,5 +1,5 @@
 // Server link to access API routes
-const link = "http://localhost:3000";
+const link = "https://employee-management-app.onrender.com";
 
 const loginBtn = document.getElementById("login-btn");
 const signupBtn = document.getElementById("signup-btn");
